@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="https://www.aluracursos.com/" target="_blank"><img class="" src="/assets/Logo.png" alt="logo de Alura"></a>
+            <a class="header__menu__link link_page" href="index.html">Encriptador</a>
+        </nav>
+    </header>
+    
+    <center>
+        <div class="msj-confimacion" style="font-size: 22px !important;">
+            <div class="semaforo">
+                <div class="luz color"></div>
+                <div class="luz color"></div>
+                <div class="luz color"></div>
+                <div class="mensaje-accion"></div>
+                <div class="luz color"></div>
+                <div class="luz color"></div>
+                <div class="luz color"></div>
+            </div>           
+        </div>
+    </center>
+    <main>
+        
+        <section>
+            <textarea class="text-tarea" cols="40" rows="10" placeholder="Ingresa aquí el texto a encriptar o desencriptar"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button id="btn-encriptar" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section-mensaje">
+            <textarea class="mensaje" id="mensaje" cols="24" rows="11" style="display: none;"></textarea>
+            <div>
+                <button class="btn-copiar" style="display: none;">Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>Desarrollado por FGRANADOS</p>
+    </footer>
+    <script src="/js/app.js"></script>
+</body>
+</html>
